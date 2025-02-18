@@ -21,6 +21,7 @@ Uma calculadora de Índice de Massa Corporal (IMC) simples e interativa, desenvo
    ```sh
    git clone https://github.com/AkiroSetonai/CALCULADORA-IMC.git
    ```
+2. **acesse a pasta do projeto:**
    ```sh
    cd CALCULADORA-IMC
    ```
