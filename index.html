@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="container">
+        <section id="img">
+            <img src="/assets/Athletes.svg">
+        </section>
+        <section class="calculator">
+            <form #form>
+                <div class="title">
+                    <h1>Calculadora - IMC</h1>
+                </div>
+                <div class="input-box">
+                    <label for="weight">Peso em KG</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-scale"></i>
+                        <input type="number" id="weight" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="input-box">
+                    <label for="height">Altura em metros</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler-vertical"></i>
+                        <input type="number" id="height" step="0.01" required>
+                        <span>
+                            M
+                        </span>
+                    </div>
+                </div>
+
+                <button class="calculate" id="calculate">Calcular IMC</button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <p id="description"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #2a2a2d;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 11.5rem;
+  height: 40rem;
+  width: 60rem;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+#img img {
+  width: 20rem;
+  padding: 15px;
+  position: relative;
+  left: 55px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: #1a1a1d;
+  border-radius: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  background-color: #6e80dc;
+  width: 8rem;
+  height: 4px;
+  border-radius: 3px;
+}
+
+.input-box label {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2a2a2d;
+  padding: 0.3rem;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+
+.input-field span,
+.input-field i {
+  color: #ffff;
+  font-size: 1.3rem;
+  padding: 0.6rem 1rem;
+}
+
+.input-field input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 10px 3px;
+  color: #ffff;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.input-field input:focus {
+  outline: none;
+}
+
+.calculate {
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #6e80dc;
+  color: #ffff;
+  padding: 0.7rem 100px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.calculate:hover {
+  background-color: #6271bd;
+}
+
+#result {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-top: 1px solid #2a2a2d;
+  padding: 0.75rem 0;
+}
+
+#bmi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.25rem;
+}
+
+#bmi span:last-child {
+  font-size: 0.875rem;
+  color: #2a2a2d;
+}
+
+.hidden {
+  display: none;
+}
+
+.underweight {
+  color: #ff6b6b;
+}
+
+.normal-weight {
+  color: #4caf50;
+}
+
+.overweight {
+  color: #ff9800;
+}
+
+.obesity-1 {
+  color: #f44336;
+}
+
+.obesity-2 {
+  color: #d32f2f;
+}
+
+.obesity-3 {
+  color: #b71c1c;
+}
